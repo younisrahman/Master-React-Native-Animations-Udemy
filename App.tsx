@@ -7,6 +7,7 @@ import TranslatePosition from './src/AnimatingProperties/TranslatePosition';
 import React from 'react';
 import AbsolutePosition from './src/AnimatingProperties/AbsolutePosition';
 import ColorBackgroundColor from './src/AnimatingProperties/ColorBackgroundColor';
+import Rotation from './src/AnimatingProperties/Rotation';
 
 export default function App() {
   return (
@@ -16,7 +17,8 @@ export default function App() {
       {/* <Scale /> */}
       {/* <WidthHeightValues /> */}
       {/* <AbsolutePosition /> */}
-      <ColorBackgroundColor />
+      {/* <ColorBackgroundColor /> */}
+      <Rotation />
     </View>
   );
 }
