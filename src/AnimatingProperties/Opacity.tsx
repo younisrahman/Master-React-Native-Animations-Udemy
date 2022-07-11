@@ -12,10 +12,12 @@ const Opacity = () => {
     Animated.timing(animation, {
       toValue: 0,
       duration: 1000,
+      useNativeDriver: true,
     }).start(() => {
       Animated.timing(animation, {
         toValue: 1,
         duration: 2000,
+        useNativeDriver: true,
       }).start();
     });
   };
