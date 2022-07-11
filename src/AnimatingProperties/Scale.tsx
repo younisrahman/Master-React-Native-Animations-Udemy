@@ -4,28 +4,33 @@ import {
   View,
   Animated,
   TouchableWithoutFeedback,
+  Text,
 } from 'react-native';
 
 const Opacity = () => {
   const animation = useRef(new Animated.Value(1)).current;
   const startAnimation = () => {
     Animated.timing(animation, {
-      toValue: 300,
+      toValue: -2,
       duration: 1500,
+      useNativeDriver: true,
     }).start(() => {
       Animated.timing(animation, {
-        toValue: 0,
+        toValue: 2,
         duration: 1500,
+        useNativeDriver: true,
       }).start();
     });
   };
   const animatedStyles = {
-    transform: [{ translateY: animation }],
+    transform: [{ scaleY: animation }],
   };
   return (
     <View>
       <TouchableWithoutFeedback onPress={startAnimation}>
-        <Animated.View style={[styles.box, animatedStyles]} />
+        <Animated.View style={[styles.box, animatedStyles]}>
+          <Text>This side forward</Text>
+        </Animated.View>
       </TouchableWithoutFeedback>
     </View>
   );
