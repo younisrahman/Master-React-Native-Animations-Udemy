@@ -4,6 +4,8 @@ import Opacity from './src/AnimatingProperties/Opacity';
 import Scale from './src/AnimatingProperties/Scale';
 import WidthHeightValues from './src/AnimatingProperties/WidthHeightValues';
 import TranslatePosition from './src/AnimatingProperties/TranslatePosition';
+import React from 'react';
+import AbsolutePosition from './src/AnimatingProperties/AbsolutePosition';
 
 export default function App() {
   return (
@@ -11,7 +13,8 @@ export default function App() {
       {/* <Opacity /> */}
       {/* <TranslatePosition /> */}
       {/* <Scale /> */}
-      <WidthHeightValues />
+      {/* <WidthHeightValues /> */}
+      <AbsolutePosition />
     </View>
   );
 }
@@ -22,5 +25,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
+    // height: '100%',
+    // width: '100%',
   },
 });

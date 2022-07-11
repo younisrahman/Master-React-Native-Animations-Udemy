@@ -7,29 +7,31 @@ import {
   Text,
 } from 'react-native';
 
-const WidthHeightValues = () => {
-  const animation = useRef(new Animated.Value(150)).current;
+const AbsolutePosition = () => {
+  const animation = useRef(new Animated.Value(0)).current;
 
   // DOnt use useNativeDriver: true, it return error
   const startAnimation = () => {
     Animated.timing(animation, {
-      toValue: 300,
+      toValue: 150,
       duration: 1500,
       useNativeDriver: false,
     }).start(() => {
       Animated.timing(animation, {
-        toValue: 150,
+        toValue: 0,
         duration: 1500,
         useNativeDriver: false,
       }).start();
     });
   };
   const animatedStyles = {
-    width: animation,
-    height: animation,
+    top: animation,
+    left: animation,
+    right: animation,
   };
+
   return (
-    <View>
+    <View style={styles.container}>
       <TouchableWithoutFeedback onPress={startAnimation}>
         <Animated.View style={[styles.box, animatedStyles]}>
           <Text>
@@ -49,12 +51,15 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
+    height: '100%',
+    width: '100%',
   },
   box: {
+    position: 'absolute',
     // width: 150,
-    // height: 150,
+    height: 150,
     backgroundColor: 'tomato',
   },
 });
 
-export default WidthHeightValues;
+export default AbsolutePosition;
