@@ -8,6 +8,7 @@ import React from 'react';
 import AbsolutePosition from './src/AnimatingProperties/AbsolutePosition';
 import ColorBackgroundColor from './src/AnimatingProperties/ColorBackgroundColor';
 import Rotation from './src/AnimatingProperties/Rotation';
+import WidthHeightPercentage from './src/AnimatingProperties/WidthHeightPercentage';
 
 export default function App() {
   return (
@@ -18,7 +19,8 @@ export default function App() {
       {/* <WidthHeightValues /> */}
       {/* <AbsolutePosition /> */}
       {/* <ColorBackgroundColor /> */}
-      <Rotation />
+      {/* <Rotation /> */}
+      <WidthHeightPercentage />
     </View>
   );
 }
