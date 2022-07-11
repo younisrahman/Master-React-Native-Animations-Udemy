@@ -7,7 +7,7 @@ import {
   Text,
 } from 'react-native';
 
-const Opacity = () => {
+const WidthHeightValues = () => {
   const animation = useRef(new Animated.Value(1)).current;
   const startAnimation = () => {
     Animated.timing(animation, {
@@ -49,4 +49,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Opacity;
+export default WidthHeightValues;

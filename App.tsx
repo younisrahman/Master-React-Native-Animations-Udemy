@@ -2,6 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import Opacity from './src/AnimatingProperties/Opacity';
 import Scale from './src/AnimatingProperties/Scale';
+import WidthHeightValues from './src/AnimatingProperties/WidthHeightValues';
 import TranslatePosition from './src/AnimatingProperties/TranslatePosition';
 
 export default function App() {
@@ -10,6 +11,7 @@ export default function App() {
       {/* <Opacity /> */}
       {/* <TranslatePosition /> */}
       <Scale />
+      <WidthHeightValues />
     </View>
   );
 }
