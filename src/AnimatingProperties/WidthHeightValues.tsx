@@ -8,28 +8,34 @@ import {
 } from 'react-native';
 
 const WidthHeightValues = () => {
-  const animation = useRef(new Animated.Value(1)).current;
+  const animation = useRef(new Animated.Value(150)).current;
+
+  // DOnt use useNativeDriver: true, it return error
   const startAnimation = () => {
     Animated.timing(animation, {
-      toValue: -2,
+      toValue: 300,
       duration: 1500,
-      useNativeDriver: true,
     }).start(() => {
       Animated.timing(animation, {
-        toValue: 2,
+        toValue: 150,
         duration: 1500,
-        useNativeDriver: true,
       }).start();
     });
   };
   const animatedStyles = {
-    transform: [{ scaleY: animation }],
+    width: animation,
+    height: animation,
   };
   return (
     <View>
       <TouchableWithoutFeedback onPress={startAnimation}>
         <Animated.View style={[styles.box, animatedStyles]}>
-          <Text>This side forward</Text>
+          <Text>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. In sint
+            laudantium ab dolores consectetur, quia atque, delectus earum
+            nesciunt incidunt temporibus! Placeat, excepturi velit ullam eum
+            molestiae labore quam aliquid?
+          </Text>
         </Animated.View>
       </TouchableWithoutFeedback>
     </View>
@@ -43,8 +49,8 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   box: {
-    width: 150,
-    height: 150,
+    // width: 150,
+    // height: 150,
     backgroundColor: 'tomato',
   },
 });

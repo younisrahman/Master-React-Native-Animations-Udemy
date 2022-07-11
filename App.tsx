@@ -10,7 +10,7 @@ export default function App() {
     <View style={styles.container}>
       {/* <Opacity /> */}
       {/* <TranslatePosition /> */}
-      <Scale />
+      {/* <Scale /> */}
       <WidthHeightValues />
     </View>
   );
