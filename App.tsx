@@ -11,6 +11,7 @@ import Rotation from './src/AnimatingProperties/Rotation';
 import WidthHeightPercentage from './src/AnimatingProperties/WidthHeightPercentage';
 import EasingBox from './src/AnimatedValueFunctions/Easing01';
 import Easing02 from './src/AnimatedValueFunctions/Easing02';
+import SpringBox from './src/AnimatedFunctions/SpringBox';
 
 export default function App() {
   return (
@@ -24,7 +25,8 @@ export default function App() {
       {/* <Rotation /> */}
       {/* <WidthHeightPercentage /> */}
       {/* <EasingBox /> */}
-      <Easing02 />
+      {/* <Easing02 /> */}
+      <SpringBox />
     </View>
   );
 }
