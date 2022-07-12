@@ -9,6 +9,7 @@ import AbsolutePosition from './src/AnimatingProperties/AbsolutePosition';
 import ColorBackgroundColor from './src/AnimatingProperties/ColorBackgroundColor';
 import Rotation from './src/AnimatingProperties/Rotation';
 import WidthHeightPercentage from './src/AnimatingProperties/WidthHeightPercentage';
+import EasingBox from './src/AnimatedValueFunctions/Easing01';
 
 export default function App() {
   return (
@@ -20,7 +21,8 @@ export default function App() {
       {/* <AbsolutePosition /> */}
       {/* <ColorBackgroundColor /> */}
       {/* <Rotation /> */}
-      <WidthHeightPercentage />
+      {/* <WidthHeightPercentage /> */}
+      <EasingBox />
     </View>
   );
 }
