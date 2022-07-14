@@ -10,32 +10,23 @@ import {
 const SpringBox = () => {
   const animation = useRef(new Animated.Value(1)).current;
   const startAnimation = () => {
-    Animated.timing(animation, {
-      toValue: 250,
-      duration: 1500,
-      // easing: Easing.back(5),
-      // easing: Easing.bounce,
-      // easing: Easing.elastic(3),
-      // easing: Easing.bezier(0.06, 1, 0.86, 0.23),
-      easing: Easing.bezier(0.25, 0.1, 0.25, 0.1),
-
+    animation.addListener(({ value }) => {
+      console.log(value);
+    });
+    Animated.spring(animation, {
+      toValue: 2,
+      friction: 2,
+      tension: 160,
       useNativeDriver: true,
     }).start(() => {
-      Animated.timing(animation, {
-        toValue: 0,
-        duration: 1500,
-        // easing: Easing.back(2),
-        // easing: Easing.bounce,
-        // easing: Easing.elastic(3),
-        // easing: Easing.bezier(0.06, 1, 0.86, 0.23),
-        easing: Easing.bezier(0.25, 0.1, 0.25, 0.1),
-
+      Animated.spring(animation, {
+        toValue: 1,
         useNativeDriver: true,
       }).start();
     });
   };
   const animatedStyles = {
-    transform: [{ translateY: animation }],
+    transform: [{ scale: animation }],
   };
   return (
     <View>
@@ -49,14 +40,14 @@ const SpringBox = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    // alignItems: 'center',
+    alignItems: 'center',
     justifyContent: 'center',
     width: '100%',
     height: '100%',
   },
   box: {
-    width: 150,
-    height: 150,
+    width: 50,
+    height: 50,
     backgroundColor: 'tomato',
   },
 });
