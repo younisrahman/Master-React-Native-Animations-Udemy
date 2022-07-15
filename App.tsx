@@ -14,6 +14,7 @@ import Easing02 from './src/AnimatedValueFunctions/Easing02';
 import SpringBox from './src/AnimatedFunctions/SpringBox';
 import Event from './src/AnimatedFunctions/Event';
 import Decay from './src/AnimatedFunctions/Decay';
+import PanResponderTest from './src/AnimatedFunctions/PanResponderTest';
 
 export default function App() {
   return (
@@ -30,7 +31,8 @@ export default function App() {
       {/* <Easing02 /> */}
       {/* <SpringBox /> */}
       {/* <Event /> */}
-      <Decay />
+      {/* <Decay /> */}
+      <PanResponderTest />
     </View>
   );
 }
