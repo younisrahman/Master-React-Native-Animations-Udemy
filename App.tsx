@@ -12,6 +12,7 @@ import WidthHeightPercentage from './src/AnimatingProperties/WidthHeightPercenta
 import EasingBox from './src/AnimatedValueFunctions/Easing01';
 import Easing02 from './src/AnimatedValueFunctions/Easing02';
 import SpringBox from './src/AnimatedFunctions/SpringBox';
+import Event from './src/AnimatedFunctions/Event';
 
 export default function App() {
   return (
@@ -26,7 +27,8 @@ export default function App() {
       {/* <WidthHeightPercentage /> */}
       {/* <EasingBox /> */}
       {/* <Easing02 /> */}
-      <SpringBox />
+      {/* <SpringBox /> */}
+      <Event />
     </View>
   );
 }
