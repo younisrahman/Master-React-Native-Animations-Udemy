@@ -16,6 +16,7 @@ import Event from './src/AnimatedFunctions/Event';
 import Decay from './src/AnimatedFunctions/Decay';
 import PanResponderTest from './src/AnimatedFunctions/PanResponderTest';
 import Add from './src/AnimatedFunctions/Add';
+import Divide from './src/AnimatedFunctions/Divide';
 
 export default function App() {
   return (
@@ -34,7 +35,8 @@ export default function App() {
       {/* <Event /> */}
       {/* <Decay /> */}
       {/* <PanResponderTest /> */}
-      <Add />
+      {/* <Add /> */}
+      <Divide />
     </View>
   );
 }
