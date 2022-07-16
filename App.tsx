@@ -18,6 +18,7 @@ import PanResponderTest from './src/AnimatedFunctions/PanResponderTest';
 import Add from './src/AnimatedFunctions/Add';
 import Divide from './src/AnimatedFunctions/Divide';
 import Multiply from './src/AnimatedFunctions/Multiply';
+import Modulo from './src/AnimatedFunctions/Modulo';
 
 export default function App() {
   return (
@@ -38,7 +39,8 @@ export default function App() {
       {/* <PanResponderTest /> */}
       {/* <Add /> */}
       {/* <Divide /> */}
-      <Multiply />
+      {/* <Multiply /> */}
+      <Modulo />
     </View>
   );
 }
