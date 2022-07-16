@@ -17,6 +17,7 @@ import Decay from './src/AnimatedFunctions/Decay';
 import PanResponderTest from './src/AnimatedFunctions/PanResponderTest';
 import Add from './src/AnimatedFunctions/Add';
 import Divide from './src/AnimatedFunctions/Divide';
+import Multiply from './src/AnimatedFunctions/Multiply';
 
 export default function App() {
   return (
@@ -36,7 +37,8 @@ export default function App() {
       {/* <Decay /> */}
       {/* <PanResponderTest /> */}
       {/* <Add /> */}
-      <Divide />
+      {/* <Divide /> */}
+      <Multiply />
     </View>
   );
 }
