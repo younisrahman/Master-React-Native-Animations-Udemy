@@ -22,6 +22,8 @@ import Modulo from './src/AnimatedFunctions/Modulo';
 import AnimatedMath from './src/AnimatedFunctions/Animated-math';
 import Parallel from './src/CombiningAnimations/Parallel';
 import Sequence from './src/CombiningAnimations/Sequence';
+import Stagger from './src/CombiningAnimations/Stagger';
+import Delay from './src/CombiningAnimations/Delay';
 
 export default function App() {
   return (
@@ -46,7 +48,9 @@ export default function App() {
       {/* <Modulo /> */}
       {/* <AnimatedMath /> */}
       {/* <Parallel /> */}
-      <Sequence />
+      {/* <Sequence /> */}
+      {/* <Stagger /> */}
+      <Delay />
     </View>
   );
 }
