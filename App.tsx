@@ -20,6 +20,8 @@ import Divide from './src/AnimatedFunctions/Divide';
 import Multiply from './src/AnimatedFunctions/Multiply';
 import Modulo from './src/AnimatedFunctions/Modulo';
 import AnimatedMath from './src/AnimatedFunctions/Animated-math';
+import Parallel from './src/CombiningAnimations/Parallel';
+import Sequence from './src/CombiningAnimations/Sequence';
 
 export default function App() {
   return (
@@ -42,7 +44,9 @@ export default function App() {
       {/* <Divide /> */}
       {/* <Multiply /> */}
       {/* <Modulo /> */}
-      <AnimatedMath />
+      {/* <AnimatedMath /> */}
+      {/* <Parallel /> */}
+      <Sequence />
     </View>
   );
 }
