@@ -6,7 +6,7 @@ import WidthHeightValues from './src/AnimatingProperties/WidthHeightValues';
 import TranslatePosition from './src/AnimatingProperties/TranslatePosition';
 import React from 'react';
 import AbsolutePosition from './src/AnimatingProperties/AbsolutePosition';
-import ColorBackgroundColor from './src/AnimatingProperties/ColorBackgroundColor';
+// import ColorBackgroundColor from './src/AnimatingProperties/ColorBackgroundColor';
 import Rotation from './src/AnimatingProperties/Rotation';
 import WidthHeightPercentage from './src/AnimatingProperties/WidthHeightPercentage';
 import EasingBox from './src/AnimatedValueFunctions/Easing01';
@@ -25,6 +25,7 @@ import Sequence from './src/CombiningAnimations/Sequence';
 import Stagger from './src/CombiningAnimations/Stagger';
 import Delay from './src/CombiningAnimations/Delay';
 import InterpolateOnInterpolate from './src/Interpolation/NumbersAndInterpolatesOnInterpolates';
+import ColorBackgroundColor from './src/Interpolation/ColorBackgroundColor';
 
 export default function App() {
   return (
@@ -52,7 +53,8 @@ export default function App() {
       {/* <Sequence /> */}
       {/* <Stagger /> */}
       {/* <Delay /> */}
-      <InterpolateOnInterpolate />
+      {/* <InterpolateOnInterpolate /> */}
+      <ColorBackgroundColor />
     </View>
   );
 }
