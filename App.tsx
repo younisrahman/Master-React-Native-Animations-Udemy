@@ -24,6 +24,7 @@ import Parallel from './src/CombiningAnimations/Parallel';
 import Sequence from './src/CombiningAnimations/Sequence';
 import Stagger from './src/CombiningAnimations/Stagger';
 import Delay from './src/CombiningAnimations/Delay';
+import InterpolateOnInterpolate from './src/Interpolation/NumbersAndInterpolatesOnInterpolates';
 
 export default function App() {
   return (
@@ -50,7 +51,8 @@ export default function App() {
       {/* <Parallel /> */}
       {/* <Sequence /> */}
       {/* <Stagger /> */}
-      <Delay />
+      {/* <Delay /> */}
+      <InterpolateOnInterpolate />
     </View>
   );
 }
