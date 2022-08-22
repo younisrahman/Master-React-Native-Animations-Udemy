@@ -59,6 +59,7 @@ const styles = StyleSheet.create({
   box: {
     width: 150,
     height: 150,
+    // backgroundColor: 'tomato',
     backgroundColor: 'tomato',
   },
 });
